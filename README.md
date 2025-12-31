@@ -4,13 +4,13 @@
 
 ## Instalación
 
-1. Clona el repositorio
+1. Cloná el repositorio
 ```bash
 git clone <https://github.com/Joapozzo/JoaquinPozzo-ChallengeDux.git>
 cd JoaquinPozzo-ChallengeDux
 ```
 
-2. Instala las dependencias
+2. Instalá las dependencias
 ```bash
 npm install
 # o
@@ -32,7 +32,7 @@ NEXT_PUBLIC_SECTOR_ID=9000
 - `NEXT_PUBLIC_API_URL`: URL de la API
 - `NEXT_PUBLIC_SECTOR_ID`: ID del sector
 
-## Levantar el proyecto
+## Levantá el proyecto
 
 ### Desarrollo
 ```bash
@@ -61,7 +61,7 @@ src/
 
 ## Tecnologías y dependencias
 
-- **Next.js 16** (App Router)
+- **Next.js 16**
 - **React 19**
 - **TypeScript**
 - **PrimeReact**
