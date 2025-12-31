@@ -21,7 +21,6 @@ const ConfirmDialogContent = ({
     loading = false,
 }: Omit<ConfirmDialogProps, 'visible' | 'onHide' | 'title'>) => {
     const handleClose = useModalClose();
-
     return (
         <div className="flex flex-col items-center gap-3 py-10">
             <i className="pi pi-exclamation-triangle text-yellow-500" style={{ fontSize: '2rem' }} />
@@ -58,12 +57,14 @@ const ConfirmDialog = ({
 }: ConfirmDialogProps) => {
     if (!visible) return null;
 
+    const label = loading ? 'Eliminando...' : confirmLabel;
+
     return (
         <ModalLayout title={title}>
             <ConfirmDialogContent
                 onConfirm={onConfirm}
                 message={message}
-                confirmLabel={confirmLabel}
+                confirmLabel={label}
                 cancelLabel={cancelLabel}
                 loading={loading}
             />
